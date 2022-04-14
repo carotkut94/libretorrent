@@ -77,7 +77,7 @@ class BaseElement implements Element {
     
     @Override
     public List<Element> getElementList(String name) {
-        return elementMap.getOrDefault(name, Collections.emptyList());
+        return elementMap.getOrDefault(name, Collections.<Element>emptyList());
     }
 
     @Override
